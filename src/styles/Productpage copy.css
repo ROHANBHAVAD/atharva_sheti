@@ -1,0 +1,140 @@
+.product-page {
+  padding: 2rem;
+  background-color: #f9fef9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.product-hero {
+  text-align: center;
+  background: linear-gradient(to right, #a5d6a7, #c8e6c9);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.product-hero h1 {
+  font-size: 2.5rem;
+  color: #2e7d32;
+}
+
+.product-hero p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Layout with grid and sidebar */
+.product-layout {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Product Grid */
+.product-grid {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+/* Product Card */
+.product-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.product-card img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  color: #2e7d32;
+}
+
+.price {
+  font-weight: bold;
+  color: #388e3c;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.benefits {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.benefits li {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Sidebar Panel */
+.product-sidebar {
+  flex: 1;
+  background-color: #e8f5e9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.product-sidebar h3 {
+  color: #2e7d32;
+  margin-bottom: 1rem;
+}
+
+.product-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.product-sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+.product-sidebar button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.product-sidebar button:hover {
+  background-color: #388e3c;
+}
+
+.product-stats,
+.product-help {
+  margin-top: 1.5rem;
+}
+
+.product-stats h4,
+.product-help h4 {
+  color: #2e7d32;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-layout {
+    flex-direction: column;
+  }
+
+  .product-sidebar {
+    width: 100%;
+  }
+}
